@@ -36,7 +36,6 @@ export const FormInput = forwardRef<HTMLInputElement, FormInputProps>(
     },
     ref
   ) => {
-    console.log("errors", errors);
     const { pending } = useFormStatus();
 
     return (
