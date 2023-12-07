@@ -77,12 +77,10 @@ export const ListForm = () => {
           />
           <input hidden value={params.boardId} name="boardId" />
           <div className="flex items-center gap-x-1">
-            <FormSubmit>
-              Add list
-              <Button onClick={disableEditing} size="sm" variant="ghost">
-                <X className="w-5 h-5" />
-              </Button>{" "}
-            </FormSubmit>
+            <FormSubmit>Add list</FormSubmit>
+            <Button onClick={disableEditing} size="sm" variant="ghost">
+              <X className="w-5 h-5" />
+            </Button>
           </div>
         </form>
       </ListWrapper>
@@ -95,6 +93,7 @@ export const ListForm = () => {
         className="w-full rounded-md bg-white/80 hover:bg-white/50 transition p-3 flex items-center font-medium text-sm"
       >
         <Plus className="w-4 h-4 mr-2" />
+        Add a list
       </button>
     </ListWrapper>
   );
